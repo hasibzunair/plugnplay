@@ -1,7 +1,7 @@
 from config import *
 
 # See https://twitter.com/kagglingdieter/status/1531155343505489920 for details
-# Also https://github.com/ChristofHenkel/kaggle-birdclef2021-2nd-place
+# Also see https://github.com/DrSleep/light-weight-refinenet/blob/master/src/train.py
 
 
 print(f"Path to data is at {DATA_DIR}.\n")
