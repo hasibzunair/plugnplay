@@ -5,7 +5,7 @@ from PIL import Image, ImageOps
 # Code commenting reference:
 # https://github.com/hasibzunair/res-unet-fastmri/blob/master/fastMRI/data/transforms.py
 
-def resize_image(image_path, new_width=192, new_height=256):
+def read_resize_image(image_path, new_width=192, new_height=256):
     """ 
     Load and resize an image to a desired size.
 
@@ -20,13 +20,11 @@ def resize_image(image_path, new_width=192, new_height=256):
     assert type(image_path) == str, f"Should be a path, got: {image_path} which is {type(image_path)}"
     
     img = Image.open(image_path)
-    img = ImageOps.fit(image_path, (new_width, new_height), Image.BICUBIC)
+    img = ImageOps.fit(img, (new_width, new_height), Image.BICUBIC)
     img = img.convert("RGB")
     img = np.array(img)
-    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
+    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR) # required when saving
     # If need saving
-    # using cv2
-    #cv2.imwrite("path.png", img)
-    # or using PIL
-    # img.save("path.png")
+    # using cv2 - cv2.imwrite("path.png", img)
+    # or using PIL - img.save("path.png")
     return img
