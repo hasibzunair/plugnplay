@@ -23,7 +23,7 @@ def read_resize_image(image_path, new_width=192, new_height=256):
     img = ImageOps.fit(img, (new_width, new_height), Image.BICUBIC)
     img = img.convert("RGB")
     img = np.array(img)
-    img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR) # required when saving
+    #img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR) # required when saving
     # If need saving
     # using cv2 - cv2.imwrite("path.png", img)
     # or using PIL - img.save("path.png")
