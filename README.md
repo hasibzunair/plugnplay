@@ -5,7 +5,7 @@ This repo is for reference to various code snippets and scripts. Originally for 
 ### Install
 ```
 conda create --name dev python=3.8
-pip install -r macos_base_env.txt
+conda env create -f macos_environment.yml
 ```
 
 An older version is here: https://github.com/hasibzunair/randomfun
