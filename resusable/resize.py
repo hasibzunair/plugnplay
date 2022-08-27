@@ -1,5 +1,4 @@
 import numpy as np
-import cv2
 from PIL import Image, ImageOps
 
 # Code commenting reference:
@@ -16,7 +15,11 @@ def read_resize_image(image_path, new_width=192, new_height=256):
 
     Returns:
         img (np.array): Resized image
+
+    Examples:
+        >>> img = read_resize_image("images/doggo.jpeg")
     """
+
     assert type(image_path) == str, f"Should be a path, got: {image_path} which is {type(image_path)}"
     
     img = Image.open(image_path)
