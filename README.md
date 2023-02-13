@@ -11,6 +11,7 @@ conda env create -f macos_environment.yml
 An older version is here: https://github.com/hasibzunair/randomfun
 
 ### Some useful links
+* Writing docstrings - [link](https://github.com/hasibzunair/plugnplay/blob/main/reusable/resize.py)
 * https://github.com/hasibzunair/research-notes
 * https://gist.github.com/hasibzunair/b0d7509342e5ffe4f27d1fa242613334i
 * https://github.com/rasbt/machine-learning-notes

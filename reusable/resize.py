@@ -4,7 +4,7 @@ from PIL import Image, ImageOps
 # Code commenting reference:
 # https://github.com/hasibzunair/res-unet-fastmri/blob/master/fastMRI/data/transforms.py
 
-def read_resize_image(image_path, new_width=192, new_height=256):
+def read_resize_image(image_path: str, new_width:int = 192, new_height: int = 256) -> np.array:
     """ 
     Load and resize an image to a desired size.
 
