@@ -53,7 +53,7 @@ def get_features(img: np.ndarray, name_of_model:str = "CLIP-RN50",
     """Extracts features from an image
 
     Args:
-        img (np.ndarray): Input image
+        img (np.ndarray): Raw input image
         name_of_model (str, optional): Name of pretrained model. Defaults to "CLIP-RN50".
         device (str, optional): GPU or CPU. Defaults to "cpu".
 
