@@ -1,4 +1,6 @@
 # Custom
+logs/
+
 .DS_Store
 *.pth 
 
