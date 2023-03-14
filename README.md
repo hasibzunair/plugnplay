@@ -12,7 +12,6 @@ An older version is here: https://github.com/hasibzunair/randomfun
 
 ### Some useful links
 * Writing docstrings - [link](https://github.com/hasibzunair/plugnplay/blob/main/reusable/resize.py)
-* https://github.com/hasibzunair/research-notes
-* https://gist.github.com/hasibzunair/b0d7509342e5ffe4f27d1fa242613334i
-* https://github.com/rasbt/machine-learning-notes
-* PyTorch Cheat Sheet - https://github.com/pytorch/tutorials/blob/master/beginner_source/PyTorch%20Cheat.md
+* How to use debugger, [link](https://gist.github.com/hasibzunair/b0d7509342e5ffe4f27d1fa242613334)
+* ML Notes, [link](https://github.com/rasbt/machine-learning-notes)
+* PyTorch Cheat Sheet, [link](https://github.com/pytorch/tutorials/blob/master/beginner_source/PyTorch%20Cheat.md)
