@@ -8,7 +8,7 @@ def read_resize_image(image_path: str, new_width:int = 192, new_height: int = 25
     """ 
     Load and resize an image to a desired size.
 
-    Arguments:
+    Args:
         image_path (str): Image to load and resize
         new_width (int): New width of the image
         new_height (int): New height of the image

@@ -1,5 +1,6 @@
 def seed_everything(seed: int):
-    """Seed everything for reproducibility.
+    """
+    Seed everything for reproducibility.
 
     Args:
         seed (int): integer for defining seed.
