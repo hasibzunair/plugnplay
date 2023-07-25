@@ -1,11 +1,13 @@
 ## Plug & Play
 
-This repo is for reference to various code snippets and scripts. Originally for reusing them in my new projects. Don't pep8tify me!
+This repo is for reference to code snippets that I reuse in my work. Don't pep8tify me!
 
 ### Install
+
 ```
-conda create --name dev python=3.8
+conda update conda
 conda env create -f macos_environment.yml
+conda activate maskrec
 ```
 
 An older version is here: https://github.com/hasibzunair/randomfun
