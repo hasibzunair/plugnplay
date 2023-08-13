@@ -7,16 +7,17 @@ from PIL import Image
 import matplotlib.pyplot as plt
 
 """
-Assuming Dataset Folder Structure.
+Script to convert a folder of images into numpy format.
 
+Folder structure for images:
 Dataset:
-    - Images
-        - image_01
-        - image_02
-        - image_03
+- Images
+    - image_01
+    - image_02
+    - image_03
 
-Example: 
-python images_to_numpy.py --root_data_path "./Dataset" --image_path "Images" --saved_folder_name "to_numpy" --visualize yes --visualize_for multiple 
+Usage: 
+python images_to_numpy.py --root_data_path "./Dataset" --image_path "Images" --saved_file_name "to_numpy" --visualize yes --visualize_for multiple 
 """
 
 parser = argparse.ArgumentParser(description= 'Convert images to numpy array')
@@ -123,7 +124,7 @@ if __name__ == "__main__":
     
     
     """if you want to visualize your converted .npy file as image."""
-    converted_image_data = np.load(args.saved_folder_name + '.npy')
+    converted_image_data = np.load(args.saved_file_name + '.npy')
     
     if args.visualize == 'no':
         print("Nothing to Show!!")
